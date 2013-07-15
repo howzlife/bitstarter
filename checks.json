@@ -1,2 +1,28 @@
-["h1", 
-".navigation"]
+[DubusN@jiunit:~]$head -n3 index.html 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+[DubusN@jiunit:~]$cat checks.json 
+["h1",
+ ".navigation", ".logo", ".blank", ".about", ".heading", ".subheading", ".pitch", ".video", ".thermometer", ".order", ".social", ".section1", ".section2", ".faq", ".footer"]
+
+[DubusN@jiunit:~]$./grader.js --checks checks.json --file index.html
+{
+    ".navigation": true,
+    "h1": true,
+    ".logo":true,
+    ".blank":true,
+    ".about":true,
+    ".heading":true,
+    ".subheading":true,
+    ".pitch":true,
+    ".video":true,
+    ".thermometer":true,
+    ".order":true,
+    ".social":true,
+    ".section1":true,
+    ".section2":true,
+    ".faq":true,
+    ".footer":true
+}
